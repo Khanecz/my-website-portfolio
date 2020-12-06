@@ -3,13 +3,13 @@ import {Link as LinkScroll} from 'react-scroll';
 
 
 export const Nav = styled.nav`
-background: black;
+background: ${({scrollNav}) => (scrollNav ? 'black' : 'transparent')};
 height: 80px;
 display: flex;
 align-items: center;
 justify-content: center;
 font-size: 1rem;
-position: sticky;
+position: fixed;
 z-index: 10;
 width: 100%;
 top: 0;

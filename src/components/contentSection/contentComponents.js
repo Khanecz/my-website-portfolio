@@ -11,6 +11,7 @@ color: white;
 display: flex;
 align-items: center;
 justify-content: center;
+flex-direction: column;
 
 @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -34,4 +35,44 @@ font-weight: 700;
 letter-spacing: 1.4px;
 text-transform: uppercase;
 margin-bottom: 16px;
+`
+
+export const ProjectsWrapper = styled.div`
+max-width: 1100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+`
+
+export const Project = styled.div`
+  text-align: left;
+  color: white;
+  max-width: 400px;
+
+  
+`
+
+export const ProjectHeading = styled.div`
+font-weight: bold;
+`
+
+export const ProjectText = styled.p`
+max-width: 400px;
+text-decoration: none;
+`
+
+export const ProjectLink = styled.a`
+text-decoration: none;
+color: white;
+
+`
+
+export const ProjectImage = styled.img`
+max-width: 400px;
+height: 100%;
+opacity: 30%;
+
+${(ProjectLink)}:hover & {
+    opacity: 100%;
+}
 `

@@ -23,16 +23,36 @@ const Navbar = (toggle) => {
         <Nav scrollNav = {scrollNav}> 
             <NavbarMenu>
                     <NavItem>
-                        <NavLink to="About">About</NavLink>
+                        <NavLink to="about"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}>About</NavLink>
                     </NavItem>
                     <NavItem>
-                         <NavLink to="Websites">Websites</NavLink>
+                         <NavLink to="website"
+                         smooth={true}
+                         duration={500}
+                         spy={true}
+                         exact="true"
+                         offset={-80}>Websites</NavLink>
                     </NavItem>
                     <NavItem>
-                         <NavLink to="Games">Games</NavLink>
+                         <NavLink to="games"
+                         smooth={true}
+                         duration={500}
+                         spy={true}
+                         exact="true"
+                         offset={-80}>Games</NavLink>
                     </NavItem>
                     <NavItem>
-                         <NavLink to="CV">CV</NavLink>
+                         <NavLink to="cv"
+                         smooth={true}
+                         duration={500}
+                         spy={true}
+                         exact="true"
+                         offset={-80}>CV</NavLink>
                     </NavItem>
             </NavbarMenu>
         </Nav>

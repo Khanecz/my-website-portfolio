@@ -39,4 +39,8 @@ text-decoration: none;
 height: 100%;
 cursor: pointer;
 padding: 0 1 rem;
+
+&.active {
+    color: #17a398;
+}
 `

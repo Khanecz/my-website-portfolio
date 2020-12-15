@@ -76,3 +76,27 @@ ${(ProjectLink)}:hover & {
     opacity: 100%;
 }
 `
+
+export const CVLink = styled.a`
+text-decoration: none;
+text-align: center;
+color: white;
+display: ${({displayCVButton}) => displayCVButton ? "#inline-block" : "none"};
+`
+
+export const CVButton = styled.button`
+width: 200px;
+height: 50px;
+background-color: #42403C;
+border: none;
+color: white;
+cursor: pointer;
+font-size: 16px;
+
+&:hover {
+  color: #17a398;
+  transition: 0.3s ease-in-out;
+  background-color: white;
+  
+}
+`

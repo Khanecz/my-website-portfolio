@@ -28,6 +28,15 @@ height: 100%;
 object-fit: cover;
 background: #232a34;
 `
+export const ImageBg = styled.img`
+width: 100%;
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+background: #232a34;
+outline: 1px;
+opacity: 0.5;
+`
 
 export const HeroContent = styled.div`
 z-index: 3;

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import {Nav, NavbarMenu, NavItem, NavLink} from './navbarComponents';
+import {Nav, NavbarMenu, NavItem, NavLink, CVLink} from './navbarComponents';
+import CV from "../../files/Rezabek_CV.pdf";
 
 const Navbar = (toggle) => {
 
@@ -31,14 +32,6 @@ const Navbar = (toggle) => {
                         offset={-80}>About</NavLink>
                     </NavItem>
                     <NavItem>
-                         <NavLink to="website"
-                         smooth={true}
-                         duration={500}
-                         spy={true}
-                         exact="true"
-                         offset={-80}>Websites</NavLink>
-                    </NavItem>
-                    <NavItem>
                          <NavLink to="games"
                          smooth={true}
                          duration={500}
@@ -47,13 +40,19 @@ const Navbar = (toggle) => {
                          offset={-80}>Games</NavLink>
                     </NavItem>
                     <NavItem>
-                         <NavLink to="cv"
+                         <NavLink to="mygames"
                          smooth={true}
                          duration={500}
                          spy={true}
                          exact="true"
-                         offset={-80}>CV</NavLink>
+                         offset={-80}>My Games</NavLink>
                     </NavItem>
+                    <NavItem>
+                        <CVLink href={CV} download="CV">
+                            CV (Download)
+                        </CVLink>
+                    </NavItem>
+
             </NavbarMenu>
         </Nav>
         </>

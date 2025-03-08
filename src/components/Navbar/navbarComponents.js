@@ -44,3 +44,17 @@ padding: 0 1 rem;
     color: #17a398;
 }
 `
+
+export const CVLink = styled.a`
+color: white;
+display: flex;
+align-items: center;
+text-decoration: none;
+height: 100%;
+cursor: pointer;
+padding: 0 1 rem;
+
+&.active {
+    color: #17a398;
+}
+`

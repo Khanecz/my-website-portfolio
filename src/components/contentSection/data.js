@@ -1,43 +1,45 @@
 import ylandsImg from '../../images/ylands.jpg';
-import linkImg from '../../images/link.png';
-import CV from '../../files/Rezabek_CV.pdf';
+import khanImg from '../../images/khan.png';
+import eveImg from '../../images/eve.png';
+import godotImg from '../../images/godot.png';
 
 export const homeObjOne = {
     id: "about",
     lightBg: true,
     lightText: false,
-    topLine: 'About',
-    displayCVButton: false
+    projectOneDescriptionOne: "Hi! My name is Michael and I'm a game designer. Below, you can find all the projects I have worked on so far.",
+    portraitImg: khanImg,
+    showSecondProject: false
 }
 
 export const homeObjTwo = {
-    id: "website",
+    id: "games",
     lightBg: false,
     lightText: false,
-    topLine: 'My websites',
-    ProjectOneimgOne: linkImg,
-    projectOneHeadingOne: 'Link the Linguist',
-    projectOneDescriptionOne: 'Teaching portfolio',
-    displayCVButton: false
-    
+    topLine: 'Games I have worked on',
+    projectOneimgOne: ylandsImg,
+    projectOneHeadingOne: 'Ylands',
+    projectOneDescriptionOne: 'Ylands is a cheerful, sandbox game with a survival element and an ingame editor that serves as a platform to make your own games.',
+    projectOneDescriptionTwo: 'I have worked on Ylands as a designer from 2015 to 2022',
+    projectOneLink: '//www.ylands.com',
+    projectTwoimgOne: eveImg,
+    projectTwoHeadingOne: 'EVE Online',
+    projectTwoDescriptionOne: 'EVE Online is the largest single shard space MMO of all time. With over 7,000 solar systems and more than 21 years of rich player-created history, join this storied universe and play free to experience everything from immense PvP or PvE battles to mining, exploration, and industry.',
+    projectTwoDescriptionTwo: 'I have worked on EVE Online as a senior game designer since 2022',
+    projectTwoLink: '//www.eveonline.com/',
+    showSecondProject: true
 }
 
 export const homeObjThree = {
-    id: "games",
+    id: "mygames",
     lightBg: true,
     lightText: false,
     topLine: 'My Games',
-    ProjectOneimgOne: ylandsImg,
-    projectOneHeadingOne: 'Ylands',
-    projectOneDescriptionOne: 'Cheerful polygony sandboxy game bla bla bla bla bla',
-    displayCVButton: false
+    projectOneimgOne: godotImg,
+    projectOneHeadingOne: 'Unnamed Project',
+    projectOneDescriptionOne: 'Narrative driven game made in Godot Engine',
+    projectOneDescriptionTwo: '',
+    showSecondProject: false
 }
 
-export const homeObjFour = {
-    id: "cv",
-    lightBg: false,
-    lightText: false,
-    topLine: 'CV',
-    displayCVButton: true,
-    CVlocation: CV
-}
+
